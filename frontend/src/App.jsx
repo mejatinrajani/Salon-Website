@@ -4,6 +4,7 @@ import Auth from './pages/Auth.jsx';
 import Category from './components/Category.jsx';
 import Templates from './components/Templates.jsx';
 import Payment from './components/Payment.jsx';
+import AboutSection from './components/About.jsx';
 
 // We will create these layout wrappers next
 import AdminLayout from './layouts/AdminLayout.jsx';
@@ -20,6 +21,7 @@ function App() {
         {/* PUBLIC & ONBOARDING FLOW */}
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Auth />} />
+        <Route path="/about" element={<AboutSection />} />
         <Route path="/category" element={<Category />} />
         <Route path="/templates" element={<Templates />} />
         <Route path="/payment" element={<Payment />} />
